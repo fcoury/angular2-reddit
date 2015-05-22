@@ -2,6 +2,7 @@
 
 import {
   Component,
+  For,
   View,
   bootstrap,
 } from "angular2/angular2";
@@ -10,9 +11,20 @@ import {
   selector: 'hello-world'
 })
 @View({
-  template: `<article>Hello world</article>`
+  template: `
+  <ul>
+    <li *for="#name of names">Hello {{ name }}</li>
+  </ul>
+  `,
+
+  directives: [For]
 })
-class HelloWorldComponent {
+class HelloWorld {
+  names: Array<string>;
+
+  constructor() {
+    this.names = ['Ari', 'Carlos', 'Felipe', 'Nate'];
+  }
 }
 
-bootstrap(HelloWorldComponent);
+bootstrap(HelloWorld);

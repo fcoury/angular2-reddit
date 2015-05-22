@@ -10,9 +10,14 @@ import {
   selector: 'hello-world'
 })
 @View({
-  template: `<article>Hello world</article>`
+  template: `<article>Hello {{ name }}</article>`
 })
 class HelloWorld {
+  name: string;
+
+  constructor() {
+    this.name = 'Felipe';
+  }
 }
 
 bootstrap(HelloWorld);

@@ -13,7 +13,8 @@ tsc --watch
 Then run a local filesystem HTTP server:
 
 ```
-node_modules/http-server/bin/http-server
+npm install -g live-server
+live-server
 ```
 
 And visit [http://localhost:8080](http://localhost:8080)

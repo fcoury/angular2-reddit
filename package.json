@@ -1,5 +1,5 @@
 {
-  "name": "angular2-webpack-typescript",
+  "name": "angular2-reddit",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,5 @@
     "http-server": "^0.8.0",
     "traceur-loader": "^0.6.3",
     "typescript": "^1.5.0-beta",
-    "webpack": "^1.8.11"
   }
 }
